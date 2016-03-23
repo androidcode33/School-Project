@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.AdminPanelAllTabController">
+  <tabs>
+    <Tab text="Classes and Subjects">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.29797979797979796" layoutX="60.0" layoutY="14.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="207.0">
+                           <children>
+                              <VBox prefHeight="367.0" prefWidth="177.0">
+                                 <children>
+                                    <Label text="Select Class to set">
+                                       <VBox.margin>
+                                          <Insets left="40.0" />
+                                       </VBox.margin></Label>
+                                    <Accordion>
+                                      <panes>
+                                        <TitledPane animated="false" text="Senior  One" />
+                                        <TitledPane animated="false" text="Senior  Two" />
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Senior  Three" />
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Senior Four" />
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="85.0" text="Senior  Five" />
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="110.0" text="Senior Six" />
+                                      </panes>
+                                       <VBox.margin>
+                                          <Insets left="2.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Accordion>
+                                    <ListView prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <HBox layoutX="44.0" layoutY="111.0" prefHeight="369.0" prefWidth="417.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox prefHeight="369.0" prefWidth="175.0">
+                                       <children>
+                                          <Label text="Subjects Collection" translateX="30.0">
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <ListView prefHeight="360.0" prefWidth="170.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="10.0" prefHeight="369.0" prefWidth="78.0" spacing="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="&gt;&gt;" translateX="20.0" translateY="40.0" />
+                                          <Button mnemonicParsing="false" text="&lt;&lt;" translateX="20.0" translateY="40.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="202.0" layoutY="10.0" prefHeight="369.0" prefWidth="164.0">
+                                       <children>
+                                          <Label text="Current Class Subject Papers">
+                                             <padding>
+                                                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <ListView prefHeight="359.0" prefWidth="159.0">
+                                             <padding>
+                                                <Insets right="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets right="3.0" />
+                                             </VBox.margin></ListView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="2.0" left="4.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Configure grades">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TabPane layoutX="-18.0" layoutY="-43.0" prefHeight="371.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Grades">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView editable="true" prefHeight="331.0" prefWidth="594.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="From" />
+                                          <TableColumn prefWidth="75.0" text="To" />
+                                          <TableColumn prefWidth="75.0" text="Aggregate" />
+                                          <TableColumn prefWidth="75.0" text="Remarks" />
+                                       </columns>
+                                    </TableView>
+                                    <ToolBar prefHeight="40.0" prefWidth="200.0">
+                                       <items>
+                                          <ComboBox prefWidth="150.0" promptText="Class" />
+                                          <ComboBox prefWidth="150.0" promptText="subject Paper" />
+                                          <Button mnemonicParsing="false" text="Save" />
+                                       </items>
+                                    </ToolBar>
+                                    <VBox prefHeight="371.0" prefWidth="600.0">
+                                       <children>
+                                          <ToolBar prefHeight="40.0" prefWidth="200.0">
+                                             <items>
+                                                <ComboBox prefWidth="150.0" promptText="Class" />
+                                                <ComboBox prefWidth="150.0" promptText="subject Paper" />
+                                                <Button mnemonicParsing="false" text="Save" />
+                                             </items>
+                                          </ToolBar>
+                                          <TableView fx:id="gradesTab" editable="true" prefHeight="331.0" prefWidth="594.0">
+                                             <columns>
+                                                <TableColumn fx:id="from" prefWidth="75.0" text="From" />
+                                                <TableColumn fx:id="to" prefWidth="75.0" text="To" />
+                                                <TableColumn fx:id="agg" prefWidth="75.0" text="Aggregate" />
+                                                <TableColumn prefWidth="75.0" text="Remarks" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="\%  Exam contributions">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutY="-38.0" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TableView fx:id="ExamContriTab" prefHeight="304.0" prefWidth="600.0">
+                                            <columns>
+                                              <TableColumn fx:id="cls" editable="false" prefWidth="75.0" text="Class" />
+                                              <TableColumn fx:id="botContri" prefWidth="134.0" text="Beginning of term" />
+                                                <TableColumn fx:id="midContri" prefWidth="66.0" text="Mid Term" />
+                                                <TableColumn fx:id="endContri" prefWidth="115.0" text="End of Term" />
+                                            </columns>
+                                          </TableView>
+                                          <Button mnemonicParsing="false" text="Save">
+                                             <VBox.margin>
+                                                <Insets left="3.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Manage Accounts">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="65.0" layoutY="-30.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ScrollPane prefHeight="700.0" prefWidth="600.0" VBox.vgrow="SOMETIMES">
+                           <content>
+                              <TableView fx:id="staffrcdsTab" fixedCellSize="-2.0" maxWidth="-Infinity" prefHeight="1000.0" prefWidth="1989.0">
+                                 <columns>
+                                    <TableColumn fx:id="sId" prefWidth="88.0" resizable="false" text="Index" />
+                                    <TableColumn fx:id="name" maxWidth="300.0" minWidth="100.0" prefWidth="270.0" text="NAME" />
+                                    <TableColumn fx:id="responsbility" maxWidth="200.0" prefWidth="100.0" text="RESPONSIBILITY" />
+                                    <TableColumn fx:id="Saddress" maxWidth="200.0" text="Address" />
+                                    <TableColumn fx:id="contact1" prefWidth="90.0" text="Contact-1" />
+                                    <TableColumn fx:id="contact2" maxWidth="100.0" text="CONTACT - 2" />
+                                    <TableColumn fx:id="Subjects" maxWidth="400.0" prefWidth="200.0" text="Sujects" />
+                                    <TableColumn fx:id="clases" maxWidth="85.0" prefWidth="85.0" text="CLASSES" />
+                                    <TableColumn fx:id="SphotoNo" maxWidth="100.0" text="PhotoNo" />
+                                    <TableColumn fx:id="fullTime" prefWidth="65.0" text="fulltime" />
+                                    <TableColumn fx:id="Department" text="Department" />
+                                    <TableColumn fx:id="passcode" text="passcode" />
+                                 </columns>
+                                 <padding>
+                                    <Insets left="2.0" right="2.0" />
+                                 </padding>
+                              </TableView>
+                           </content>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="5.0" VBox.vgrow="SOMETIMES">
+                           <children>
+                              <Button layoutX="373.0" layoutY="334.0" mnemonicParsing="false" text="New" />
+                              <Button layoutX="436.0" layoutY="334.0" mnemonicParsing="false" text="Edit" />
+                              <Button layoutX="494.0" layoutY="334.0" mnemonicParsing="false" text="Delete" />
+                           </children>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Student Records">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.29431438127090304" layoutX="-69.0" layoutY="8.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="165.0">
+                           <children>
+                              <Accordion layoutY="8.0" maxWidth="-Infinity" prefHeight="369.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <panes>
+                                  <TitledPane animated="false" text="Senior  One">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                  <TitledPane animated="false" text="Senior  two">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Senior   three">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Senior   four">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Senior  five">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Senior  six">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </TitledPane>
+                                </panes>
+                                 <padding>
+                                    <Insets bottom="2.0" left="2.0" top="2.0" />
+                                 </padding>
+                              </Accordion>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox maxWidth="-Infinity" prefHeight="370.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ScrollPane prefHeight="640.0" prefWidth="950.0" VBox.vgrow="NEVER">
+                                       <content>
+                                          <TableView fx:id="stdrcdsTab" fixedCellSize="-2.0" maxWidth="-Infinity" prefHeight="1000.0" prefWidth="1589.0">
+                                             <columns>
+                                                <TableColumn fx:id="adNo" prefWidth="88.0" resizable="false" text="AD-NO" />
+                                                <TableColumn fx:id="S_ID" maxWidth="300.0" minWidth="78.0" prefWidth="86.0" text="S-ID" />
+                                                <TableColumn fx:id="surName" maxWidth="292.0" prefWidth="284.0" text="NAME" />
+                                                <TableColumn fx:id="address" maxWidth="200.0" text="Address" />
+                                                <TableColumn fx:id="adYear" prefWidth="90.0" text="AD-YEAR" />
+                                                <TableColumn fx:id="gender" maxWidth="100.0" text="GENDER" />
+                                                <TableColumn fx:id="nationality" maxWidth="400.0" prefWidth="200.0" text="NATIONALITY" />
+                                                <TableColumn fx:id="contact" maxWidth="85.0" prefWidth="85.0" text="CONTACT" />
+                                                <TableColumn fx:id="photoNo" maxWidth="100.0" text="PhotoNo" />
+                                                <TableColumn fx:id="feesStatus" prefWidth="65.0" text="FEES-STATUS" />
+                                                <TableColumn fx:id="Guardian" text="GUARDIAN" />
+                                                <TableColumn fx:id="dob" text="DOB" />
+                                                <TableColumn fx:id="clas" text="CLASS" />
+                                                <TableColumn fx:id="stream" text="STREAM" />
+                                                <TableColumn fx:id="house" text="HOUSE" />
+                                                <TableColumn fx:id="religion" text="RELIGION" />
+                                                <TableColumn fx:id="addComments" text="Comments" />
+                                             </columns>
+                                             <padding>
+                                                <Insets left="2.0" right="2.0" />
+                                             </padding>
+                                          </TableView>
+                                       </content>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </ScrollPane>
+                                    <HBox spacing="5.0" VBox.vgrow="SOMETIMES">
+                                       <children>
+                                          <Button fx:id="addNew" layoutX="373.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleStdNew" text="New" />
+                                          <Button layoutX="436.0" layoutY="334.0" mnemonicParsing="false" text="Edit" />
+                                          <Button layoutX="494.0" layoutY="334.0" mnemonicParsing="false" text="Delete" />
+                                       </children>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Untitled Tab">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab text="Dash Board">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Accordion layoutX="40.0" layoutY="38.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <panes>
+                      <TitledPane animated="false" text="BackUp  database">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox layoutX="-19.0" layoutY="14.0" prefHeight="295.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <VBox prefHeight="276.0" prefWidth="301.0">
+                                             <children>
+                                                <Group />
+                                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Group>
+                                                         <children>
+                                                            <RadioButton layoutY="6.0" mnemonicParsing="false" text="Manual" />
+                                                            <RadioButton layoutY="39.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="Schedule" />
+                                                         </children>
+                                                      </Group>
+                                                      <Button layoutX="140.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="131.0" text="Back Up Now" />
+                                                      <Separator layoutY="39.0" prefHeight="0.0" prefWidth="300.0" />
+                                                      <DatePicker layoutX="127.0" layoutY="46.0" promptText="choose date" />
+                                                      <Label layoutX="6.0" layoutY="94.0" prefHeight="28.0" prefWidth="93.0" text="Interval :" />
+                                                      <ComboBox layoutX="130.0" layoutY="96.0" prefWidth="150.0" promptText="every after" />
+                                                   </children>
+                                                </Pane>
+                                             </children>
+                                          </VBox>
+                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                          <TextArea prefHeight="276.0" prefWidth="266.0" promptText="Oops!  No latest  Backups made!">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </TextArea>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Update database">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="14.0" layoutY="-2.0" prefHeight="295.0" prefWidth="598.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Pane prefHeight="58.0" prefWidth="579.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="6.0" text="Last update made on :" />
+                                                <Text layoutX="172.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="lastUpDate" wrappingWidth="91.13671112060547" />
+                                                <Text layoutX="172.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NextUpdate" />
+                                                <Label layoutX="14.0" layoutY="36.0" text="Next update expected on :" />
+                                                <Text layoutX="488.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today" wrappingWidth="91.13671112060547" />
+                                                <Label layoutX="414.0" layoutY="4.0" text="Current Date :" />
+                                             </children>
+                                          </Pane>
+                                          <Separator prefWidth="200.0" />
+                                          <Pane layoutX="10.0" layoutY="10.0" prefHeight="58.0" prefWidth="579.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="6.0" text="Warning :" />
+                                                <Text layoutX="79.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="91.13671112060547" />
+                                                <Text layoutX="79.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                                <Label layoutX="14.0" layoutY="33.0" text="Label" />
+                                             </children>
+                                          </Pane>
+                                          <Separator prefWidth="200.0" />
+                                          <Label text="Go on to update" />
+                                          <Separator prefWidth="200.0" />
+                                          <CheckBox mnemonicParsing="false" text="Back Up  Before making  update">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets left="15.0" />
+                                             </VBox.margin>
+                                          </CheckBox>
+                                          <Button mnemonicParsing="false" text="Just  promote Class" textFill="#12a420">
+                                             <VBox.margin>
+                                                <Insets left="55.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" text="Erase  student  DataBase" textFill="#f50a0a">
+                                             <VBox.margin>
+                                                <Insets left="42.0" top="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="untitled 3">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

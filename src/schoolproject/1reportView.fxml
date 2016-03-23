@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="712.0" prefWidth="1233.0" stylesheets="@LoginNew.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.ReportViewController">
+   <children>
+      <VBox layoutX="129.0" layoutY="28.0" prefHeight="695.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane prefHeight="656.0" prefWidth="900.0">
+               <content>
+                  <Pane prefHeight="1000.0" prefWidth="898.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <VBox layoutX="91.0" layoutY="17.0" prefHeight="951.0" prefWidth="888.0">
+                           <children>
+                              <HBox prefHeight="117.0" prefWidth="888.0" spacing="5.0">
+                                 <children>
+                                    <ImageView fitHeight="120.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@SchoolLabel.jpg" />
+                                       </image></ImageView>
+                                    <VBox prefHeight="120.0" prefWidth="622.0">
+                                       <children>
+                                          <Label text="MUSAKA  SECONDARY  HIGH  SCHOOL">
+                                             <font>
+                                                <Font name="Castellar" size="26.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="15.0" />
+                                             </VBox.margin></Label>
+                                          <Label text="MUSAKA  -  LUSAJA">
+                                             <font>
+                                                <Font name="Century" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="200.0" />
+                                             </VBox.margin></Label>
+                                          <Label text="P .O  Box  22060 Kampala -UGANDA , Tel:+256(0) 414 285  775  / 077894556778">
+                                             <VBox.margin>
+                                                <Insets left="80.0" />
+                                             </VBox.margin></Label>
+                                          <Label text="&quot;Strive for Success&quot;" textFill="#ee0c0c">
+                                             <font>
+                                                <Font name="Brush Script MT Italic" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="217.0" />
+                                             </VBox.margin></Label>
+                                          <Label text="PROGRESSIVE  'O' LEVEL  REPORT" underline="true">
+                                             <font>
+                                                <Font name="Bookman Old Style" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="140.0" />
+                                             </VBox.margin></Label>
+                                       </children>
+                                    </VBox>
+                                    <ImageView fitHeight="76.0" fitWidth="170.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="SOMETIMES">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@picture016.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="3.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="10.0" right="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <GridPane hgap="3.0" prefHeight="60.0" prefWidth="826.0" vgap="3.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="243.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="10.0" prefWidth="40.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="40.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <VBox.margin>
+                                    <Insets left="25.0" right="25.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="NAME :" />
+                                    <Label text="TERM :" GridPane.rowIndex="1" />
+                                    <Label text="YEAR :" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Label text="CLASS :" GridPane.columnIndex="2" />
+                                    <Label text="HOUSE :" GridPane.columnIndex="4" />
+                                    <Label text="SEX :" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <TextField fx:id="name" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="5.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextArea maxHeight="26.0" maxWidth="150.0" minWidth="130.0" prefHeight="200.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <padding>
+                                          <Insets right="40.0" />
+                                       </padding>
+                                       <GridPane.margin>
+                                          <Insets right="150.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </TextArea>
+                                    <TextArea fx:id="clss" maxHeight="17.0" maxWidth="200.0" minHeight="26.0" minWidth="60.0" prefHeight="65.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                       <GridPane.margin>
+                                          <Insets right="100.0" />
+                                       </GridPane.margin>
+                                    </TextArea>
+                                    <TextArea maxHeight="26.0" maxWidth="50.0" minHeight="26.0" minWidth="50.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="130.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </TextArea>
+                                    <TextArea maxHeight="26.0" maxWidth="150.0" minHeight="26.0" minWidth="80.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5">
+                                       <GridPane.margin>
+                                          <Insets right="90.0" />
+                                       </GridPane.margin>
+                                    </TextArea>
+                                    <TextArea maxHeight="26.0" maxWidth="60.0" minHeight="26.0" minWidth="40.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="150.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </TextArea>
+                                 </children>
+                              </GridPane>
+                              <Separator prefWidth="200.0">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Separator>
+                              <GridPane gridLinesVisible="true">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="50.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="70.0" prefWidth="80.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+	                                <RowConstraints minHeight="40.0" prefHeight="30.0" />
+	                                <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	                                <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />                         
+                                    
+                                </rowConstraints>
+                                 <VBox.margin>
+                                    <Insets left="40.0" right="40.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="EXAMINATION  TAKEN" />
+                                    <Label text="English  Language" GridPane.rowIndex="1" />
+                                    <Label text="Biology" GridPane.rowIndex="4" />
+                                    <Label text="Mathematics" GridPane.rowIndex="3" />
+                                    <Label text="Physics" GridPane.rowIndex="5" />
+                                    <Label text="Chemistry" GridPane.rowIndex="6" />
+                                    <Label text="History" GridPane.rowIndex="7" />
+                                    <Label text="Geography" GridPane.rowIndex="8" />
+                                    <Label text="Fine  Art" GridPane.rowIndex="9" />
+                                    <Label text="Agriculture" GridPane.rowIndex="10" />
+                                    <Label text="Tech.  Drawing" GridPane.rowIndex="11" />
+                                    <Label text="Home  Economics" GridPane.rowIndex="12" />
+                                    <Label text="Commerce" GridPane.rowIndex="13" />
+                                    <Label text="Accounts" GridPane.rowIndex="14" />
+                                    <Label text="Literature in English" GridPane.rowIndex="15" />
+                                    <Label text="Luganda" GridPane.rowIndex="16" />
+                                    <Label text="CRE" GridPane.rowIndex="17" />
+                                    <Label text="Political  Education" GridPane.rowIndex="18" />
+                                    <Label text="French" GridPane.rowIndex="19" />
+                                    <Label text="Entrepreneurship" GridPane.rowIndex="20" />
+                                    <Label text="Computer" GridPane.rowIndex="21" />
+                                    <Label text="IRE" GridPane.rowIndex="22" />
+                                    <Label text="Music" GridPane.rowIndex="24" />
+                                    <Label text="Additional  Maths" GridPane.rowIndex="23" />
+                                    
+                                    <Label text="MID TERM  30%" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
+                                    <Label text="END OF TERM 70%" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                                    <Label text="FINAL MARK  100%" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" />
+                                    <Label text="GRADE" textAlignment="JUSTIFY" GridPane.columnIndex="4" />
+                                    <Label text="REMARKS" textAlignment="RIGHT" GridPane.columnIndex="5" />
+                                    <Label text="Teacher's Initials" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6" />
+                                    <Text fx:id="sb01b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Text fx:id="sb03b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Text fx:id="sb04b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Text fx:id="sb05b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="71.13671875" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Text fx:id="sb06b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Text fx:id="sb07b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Text fx:id="sb08b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="67.13671875" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Text fx:id="sb09b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Text fx:id="sb10b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Text fx:id="sb11b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <Text fx:id="sb12b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <Text fx:id="sb21b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                                    <Text fx:id="sb20b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                                    <Text fx:id="sb19b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                                    <Text fx:id="sb18b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                                    <Text fx:id="sb17b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                    <Text fx:id="sb16b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                    <Text fx:id="sb15b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                    <Text fx:id="sb14b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                    <Text fx:id="sb13b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                    <Text fx:id="sb22b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+                                    <Text fx:id="sb23b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+                                    <Text fx:id="sb24b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="24" />                                  
+
+
+                                    <Text fx:id="sb01e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.13671875" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Text fx:id="sb03e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <Text fx:id="sb04e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Text fx:id="sb05e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Text fx:id="sb06e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="60.13671875" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Text fx:id="sb07e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <Text fx:id="sb08e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <Text fx:id="sb09e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                    <Text fx:id="sb10e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                    <Text fx:id="sb11e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <Text fx:id="sb12e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                    <Text fx:id="sb21e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="21" />
+                                    <Text fx:id="sb20e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="60.13671875" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                                    <Text fx:id="sb19e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+                                    <Text fx:id="sb18e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+                                    <Text fx:id="sb17e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                                    <Text fx:id="sb16e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="60.13671875" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                                    <Text fx:id="sb15e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+                                    <Text fx:id="sb14e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="61.13671875" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                                    <Text fx:id="sb13e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="60.13671875" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                                    <Text fx:id="sb22e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="56.13671875" GridPane.columnIndex="2" GridPane.rowIndex="22" />
+                                    <Text fx:id="sb23e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="23" />
+                                    <Text fx:id="sb24e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="59.13671875" GridPane.columnIndex="2" GridPane.rowIndex="24" />
+
+                                    <Text fx:id="sb01" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Text fx:id="sb03" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Text fx:id="sb04" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <Text fx:id="sb05" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <Text fx:id="sb06" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <Text fx:id="sb07" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <Text fx:id="sb08" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <Text fx:id="sb09" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                    <Text fx:id="sb10" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                    <Text fx:id="sb11" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                    <Text fx:id="sb12" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                    <Text fx:id="sb21" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="21" />
+                                    <Text fx:id="sb20" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="20" />
+                                    <Text fx:id="sb19" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="19" />
+                                    <Text fx:id="sb18" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="79.13671875" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                                    <Text fx:id="sb17" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+                                    <Text fx:id="sb16" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                                    <Text fx:id="sb15" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+                                    <Text fx:id="sb14" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="77.13671875" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                                    <Text fx:id="sb13" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                                    <Text fx:id="sb22" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="22" />
+                                    <Text fx:id="sb23" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="23" />
+                                    <Text fx:id="sb24" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="24" />
+
+                                    <Text fx:id="sb01g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <Text fx:id="sb03g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <Text fx:id="sb04g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <Text fx:id="sb05g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <Text fx:id="sb06g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                    <Text fx:id="sb07g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                    <Text fx:id="sb08g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <Text fx:id="sb09g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                                    <Text fx:id="sb10g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                                    <Text fx:id="sb11g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                                    <Text fx:id="sb12g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                                    <Text fx:id="sb21g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="21" />
+                                    <Text fx:id="sb20g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="20" />
+                                    <Text fx:id="sb19g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="19" />
+                                    <Text fx:id="sb18g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+                                    <Text fx:id="sb17g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="17" />
+                                    <Text fx:id="sb16g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+                                    <Text fx:id="sb15g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+                                    <Text fx:id="sb14g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+                                    <Text fx:id="sb13g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                                    <Text fx:id="sb22g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="22" />
+                                    <Text fx:id="sb23g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="23" />
+                                    <Text fx:id="sb24g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="4" GridPane.rowIndex="24" />
+
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="21" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="20" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="19" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="18" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="22" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="23" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="24" />
+
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="21" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="20" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="19" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="18" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="22" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="23" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="6" GridPane.rowIndex="24" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Health Science" GridPane.rowIndex="25" />
+                                    <Text fx:id="sb25b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+                                    <Text fx:id="sb25e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="25" />
+                                    <Text fx:id="sb25" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="78.13671875" GridPane.columnIndex="3" GridPane.rowIndex="25" />
+                                    <Text fx:id="sb25g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="68.13671875" GridPane.columnIndex="4" GridPane.rowIndex="25" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="25" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Oral English" GridPane.rowIndex="2" />
+                                    <Text fx:id="sb02b" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="69.13671875" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Text fx:id="sb02e" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="58.13671875" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Text fx:id="sb02" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="77.13671875" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Text fx:id="sb02g" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="70.13671875" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+
+                                  
+                                 </children>
+                              </GridPane>
+                              <HBox minHeight="174.0" prefHeight="174.0" prefWidth="900.0" spacing="10.0">
+                                 <children>
+                                    <GridPane gridLinesVisible="true">
+                                       <children>
+                                          <Label text="D2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="D1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="KEY  TO GRADES" />
+                                          <Label text="75 - 100" GridPane.rowIndex="1" />
+                                          <Label text="70 - 74" GridPane.rowIndex="2" />
+                                          <Label text="65 - 69" GridPane.rowIndex="3" />
+                                          <Label text="60 - 64" GridPane.rowIndex="4" />
+                                          <Label text="55 - 59" GridPane.rowIndex="5" />
+                                          <Label text="50 - 54" GridPane.rowIndex="6" />
+                                          <Label text="45 - 49" GridPane.rowIndex="7" />
+                                          <Label text="38 - 35" GridPane.rowIndex="8" />
+                                          <Label text="0 - 37" GridPane.rowIndex="9" />
+                                          <Label text="C3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Label text="C4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label text="C5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Label text="C6" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label text="P7" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <Label text="P8" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <Label text="P9" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="50.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="40.0" top="5.0" />
+                                       </HBox.margin>
+                                    </GridPane>
+                                    <GridPane>
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutY="7.0" text="TOTAL  MARK :" />
+                                                <TextField fx:id="tot" layoutX="92.0" layoutY="3.0" prefHeight="25.0" prefWidth="65.0" />
+                                                <HBox layoutX="11.0" layoutY="838.0" prefHeight="174.0" prefWidth="900.0">
+                                                   <children>
+                                                      <GridPane gridLinesVisible="true">
+                                                         <children>
+                                                            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                         </children>
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="50.0" />
+                                                         </columnConstraints>
+                                                         <rowConstraints>
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                         <HBox.margin>
+                                                            <Insets bottom="20.0" left="40.0" />
+                                                         </HBox.margin>
+                                                      </GridPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets right="3.0" />
+                                             </GridPane.margin>
+                                          </Pane>
+                                          <Label text="AVERAGE :" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="5.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="CONDUCT :" GridPane.rowIndex="1" />
+                                          <Label text="Class Teacher's Comment :" GridPane.rowIndex="2" />
+                                          <Label text="Head Teacher's Comment :" GridPane.rowIndex="3" />
+                                          <Label text="Next  Term,s  Fees :" GridPane.rowIndex="4" />
+                                          <Label text="Next  Term  begins on :" GridPane.rowIndex="5" />
+                                          <TextField fx:id="avg" maxWidth="65.0" prefWidth="65.0" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                             <children>
+                                                <Label layoutX="-3.0" layoutY="6.0" text="POSITION:" />
+                                                <Label layoutX="60.0" layoutY="7.0" text="STREAM :" />
+                                                <Label layoutX="152.0" layoutY="-4.0" text="/">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font></Label>
+                                                <Label layoutX="204.0" layoutY="7.0" text="CLASS :" />
+                                                <Label layoutX="279.0" layoutY="-3.0" text="/">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font></Label>
+                                                <TextField fx:id="sp" layoutX="118.0" layoutY="2.0" maxWidth="30.0" prefWidth="40.0" />
+                                                <TextField fx:id="st" layoutX="164.0" layoutY="2.0" maxWidth="30.0" prefWidth="40.0" />
+                                                <TextField fx:id="cp" layoutX="246.0" layoutY="2.0" maxWidth="30.0" prefWidth="40.0" />
+                                                <TextField fx:id="ct" layoutX="290.0" layoutY="3.0" maxWidth="30.0" prefWidth="40.0" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="70.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="350.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="42.0" prefWidth="1017.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="85.0" text="&lt;&lt; Prevous">
+                     <HBox.margin>
+                        <Insets left="10.0" right="70.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="85.0" text="Next  &gt;&gt;">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Pane prefHeight="54.0" prefWidth="299.0" />
+                  <TextField promptText="Quick  Search">
+                     <HBox.margin>
+                        <Insets right="4.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="39.0" text="Go">
+                     <HBox.margin>
+                        <Insets right="10.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <MenuButton mnemonicParsing="false" prefHeight="29.0" prefWidth="127.0" text="Print">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Print  All" />
+                        <MenuItem mnemonicParsing="false" text="Print Current" />
+                        <MenuItem mnemonicParsing="false" text="Print  to pdf" />
+                     </items>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ListView fx:id="aClass" layoutY="40.0" prefHeight="617.0" prefWidth="200.0" />
+      <Label layoutX="73.0" layoutY="14.0" text="CLASS">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

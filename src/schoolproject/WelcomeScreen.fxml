@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1300.0" stylesheets="@delete1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.WelcomeController">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="2.0" prefHeight="676.0" prefWidth="1300.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <top>
+            <VBox prefHeight="153.0" prefWidth="982.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="72.0" prefWidth="982.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="82.0" prefWidth="1284.0" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="95.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@SchoolLabel.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" text="MUSAKA SECONDARY  SCHOOL" textAlignment="CENTER" textFill="#5b4949">
+                                 <font>
+                                    <Font size="59.0" />
+                                 </font>
+                              </Label>
+                              <GridPane prefHeight="41.0" prefWidth="251.0" vgap="5.0">
+                                 <children>
+                                    <Label text="LOGGED IN AS :">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="TIME LOGGED IN :" GridPane.rowIndex="1" />
+                                    <Label text="WORKING CLASS :" GridPane.rowIndex="2" />
+                                    <TextField fx:id="loggedInAs" GridPane.columnIndex="1">
+                                       <padding>
+                                          <Insets bottom="2.0" />
+                                       </padding>
+                                       <GridPane.margin>
+                                          <Insets bottom="3.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="TimeLoggedIn" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" top="4.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="WorkingClass" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="982.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ToolBar prefHeight="54.0" prefWidth="1281.0">
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <items>
+                              <ComboBox prefHeight="40.0" prefWidth="150.0" promptText="SUBJECTS" />
+                              <ComboBox layoutX="10.0" layoutY="13.0" prefHeight="40.0" prefWidth="150.0" promptText="CLASS" />
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="MARKS">
+                                 <items>
+                                    <MenuItem fx:id="EnterMrks" mnemonicParsing="false" onAction="#handleEnterMrks" text="Enter Marks" />
+                                    <MenuItem fx:id="GenerateTemplates" mnemonicParsing="false" onAction="#handleGenerateTemplates" text="Generate templates" />
+                                    <MenuItem fx:id="MarkSheetView" mnemonicParsing="false" onAction="#handleMarkSheetsView" text="Mark Sheets View" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="STAFF">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="StaffDetail" mnemonicParsing="false" onAction="#handleStaffDetails" text="Details" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="SEARCH">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="SearchByName" mnemonicParsing="false" onAction="#handleSearchByName" text="by name" />
+                                    <MenuItem fx:id="SearchByIndex" mnemonicParsing="false" onAction="#handleSearchByIndex" text="by index" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton layoutX="318.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="REPORTS">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="GenerateReports" mnemonicParsing="false" onAction="#handleGenerateReports" text="Generate" />
+                                    <MenuItem fx:id="ReportAnalysis" mnemonicParsing="false" onAction="#handleReportAnalysis" text="Analysis" />
+                                    <MenuItem fx:id="CheckProgress" mnemonicParsing="false" onAction="#handleCheckProgress" text="Check progress" />
+                                 </items>
+                              </MenuButton>
+                              <Button fx:id="help" mnemonicParsing="false" onAction="#handleUserHelp" prefHeight="40.0" prefWidth="166.0" text="HELP">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="logOutBtn" layoutX="934.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLoggingOut" prefHeight="44.0" prefWidth="183.0" text="LOG OUT">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                           </items>
+                           <padding>
+                              <Insets bottom="3.0" right="2.0" top="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="3.0" right="3.0" />
+                           </HBox.margin>
+                        </ToolBar>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <left>
+            <VBox prefHeight="523.0" prefWidth="156.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="158.0" prefWidth="158.0" text="LIBRARY" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="158.0" prefWidth="158.0" text="FEES" />
+                  <Button fx:id="AdminBtn" mnemonicParsing="false" onAction="#handleAdminPanelBtn" prefHeight="160.0" prefWidth="151.0" text="ADMINIRTATOR'S PANEL" />
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <HBox prefHeight="594.0" prefWidth="882.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="325.0" prefWidth="2.0" />
+                  <ImageView fitHeight="458.0" fitWidth="807.0" pickOnBounds="true" preserveRatio="true" translateY="23.0">
+                     <HBox.margin>
+                        <Insets left="1.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@homeImage.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <VBox prefHeight="523.0" prefWidth="289.0">
+                     <children>
+                        <TextArea editable="false" prefHeight="484.0" prefWidth="289.0" promptText="No messages  left" text="ALL  teacher are  remaided&#10;that  marks entry is &#10;scheduled from 24/08/2020  upto&#10;30/08/2020.&#10;&#10;You are all requested to meet&#10;your responsibilities in time.&#10;&#10;Thanks.">
+                           <font>
+                              <Font name="Calibri Italic" size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                           </padding>
+                        </TextArea>
+                        <Button fx:id="updateNotesBtn" mnemonicParsing="false" onAction="#AddUpdateNotesBtn" prefHeight="11.0" prefWidth="289.0" text="Add Updates" />
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

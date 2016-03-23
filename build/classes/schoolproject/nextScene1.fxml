@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1300.0" stylesheets="@Login1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.nextSceneController">
+   <children>
+      <VBox layoutX="134.0" layoutY="186.0" prefHeight="680.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="153.0" prefWidth="982.0">
+               <children>
+                  <HBox prefHeight="82.0" prefWidth="972.0">
+                     <children>
+                        <HBox prefHeight="82.0" prefWidth="1284.0" spacing="5.0">
+                           <children>
+                              <ImageView fitHeight="95.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@SchoolLabel.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" text="MUSAKA SECONDARY  SCHOOL" textAlignment="CENTER" textFill="#5b4949">
+                                 <font>
+                                    <Font size="59.0" />
+                                 </font>
+                              </Label>
+                              <GridPane prefHeight="41.0" prefWidth="251.0" vgap="5.0">
+                                 <children>
+                                    <Label text="LOGGED IN AS :">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="TIME LOGGED IN :" GridPane.rowIndex="1" />
+                                    <Label text="WORKING CLASS :" GridPane.rowIndex="2" />
+                                    <TextField fx:id="loggedInAs" GridPane.columnIndex="1">
+                                       <padding>
+                                          <Insets bottom="2.0" />
+                                       </padding>
+                                       <GridPane.margin>
+                                          <Insets bottom="3.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="TimeLoggedIn" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" top="4.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="WorkingClass" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="72.0" prefWidth="982.0">
+                     <children>
+                        <ToolBar prefHeight="54.0" prefWidth="1328.0">
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <items>
+                              <ComboBox prefHeight="40.0" prefWidth="150.0" promptText="SUBJECTS" />
+                              <ComboBox layoutX="10.0" layoutY="13.0" prefHeight="40.0" prefWidth="150.0" promptText="CLASS" />
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="MARKS">
+                                 <items>
+                                    <MenuItem fx:id="EnterMrks" mnemonicParsing="false" onAction="#handleEnterMrks" text="Enter  Marks" />
+                                    <MenuItem fx:id="GenerateTemplates" mnemonicParsing="false" onAction="#handleGenerateTemplates" text="Generate templates" />
+                                    <MenuItem fx:id="MarkSheetView" mnemonicParsing="false" onAction="#handleMarkSheetsView" text="Mark Sheet View" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="STAFF">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="StaffDetail" mnemonicParsing="false" onAction="#handleStaffDetails" text="Details" />
+                                    <MenuItem fx:id="StaffAccounts" mnemonicParsing="false" onAction="#handleStaffAccounts" text="Staff Accounts" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="SEARCH">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="SearchByName" mnemonicParsing="false" onAction="#handleSearchByName" text="by name" />
+                                    <MenuItem fx:id="SearchByIndex" mnemonicParsing="false" onAction="#handleSearchByIndex" text="by index" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton layoutX="318.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="REPORTS">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                                 <items>
+                                    <MenuItem fx:id="GenerateReports" mnemonicParsing="false" onAction="#handleGenerateReports" text="Generate" />
+                                    <MenuItem fx:id="ReportAnalysis" mnemonicParsing="false" onAction="#handleReportAnalysis" text="Analysis" />
+                                    <MenuItem fx:id="CheckProgress" mnemonicParsing="false" onAction="#handleCheckProgress" text="Check Progress" />
+                                 </items>
+                              </MenuButton>
+                              <Button fx:id="Home" mnemonicParsing="false" onAction="#handleHome" prefHeight="44.0" prefWidth="154.0" text="HOME">
+                                 <graphic>
+                                    <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="logOutBtn" layoutX="934.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLoggingOut" prefHeight="43.0" prefWidth="156.0" text="LOG OUT" />
+                              <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+                           </items>
+                           <padding>
+                              <Insets bottom="3.0" right="2.0" top="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="3.0" right="3.0" />
+                           </HBox.margin>
+                        </ToolBar>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TabPane prefHeight="492.0" prefWidth="1300.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab closable="false" text="Beginning of term">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="enterMarksTable" layoutX="14.0" prefHeight="458.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="INDEXColumn" editable="false" prefWidth="110.0" resizable="false" text="INDEX" />
+                                  <TableColumn fx:id="NAMEColumn" editable="false" prefWidth="228.0" text="NAME" />
+                                    <TableColumn fx:id="P1Column" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="MARK" />
+                                    <TableColumn fx:id="P1Grd" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="GRADE" />
+                                    <TableColumn fx:id="Rank" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="RANK" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Mid term">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView layoutX="6.0" layoutY="1.0" prefHeight="458.0" prefWidth="1300.0">
+                                 <columns>
+                                    <TableColumn fx:id="INDEXColumn1" editable="false" prefWidth="110.0" resizable="false" text="INDEX" />
+                                    <TableColumn fx:id="NAMEColumn1" editable="false" prefWidth="228.0" text="NAME" />
+                                    <TableColumn fx:id="P1Column1" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="MARK" />
+                                    <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="GRADE" />
+                                    <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="RANK" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="End of term">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="1300.0">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                           <children>
+                              <TableView fx:id="enterMarksTable2" layoutX="6.0" prefHeight="458.0" prefWidth="1300.0">
+                                 <columns>
+                                    <TableColumn fx:id="INDEXColumn2" editable="false" prefWidth="110.0" resizable="false" text="INDEX" />
+                                    <TableColumn fx:id="NAMEColumn2" editable="false" prefWidth="228.0" text="NAME" />
+                                    <TableColumn fx:id="P2Column2" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="MARK" />
+                                    <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="GRADE" />
+                                    <TableColumn maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="RANK" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </TabPane>
+            <HBox prefHeight="34.0" prefWidth="1300.0">
+               <children>
+                  <TextField fx:id="importfield" prefHeight="23.0" prefWidth="145.0" promptText="Import from file" translateY="4.0">
+                     <HBox.margin>
+                        <Insets left="4.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </TextField>
+                  <Button fx:id="browseBtn1" mnemonicParsing="false" onAction="#handleBrowseBtn1" text="Browse" translateY="3.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Import" translateY="3.0" />
+                  <MenuButton mnemonicParsing="false" text="Print" translateX="915.0" translateY="4.0">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" text="Save" translateX="925.0" translateY="3.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="276.0" spacing="15.0" stylesheets="@delete1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="CHOOSE  NAME TO DELETE">
+         <VBox.margin>
+            <Insets left="60.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <ComboBox prefHeight="40.0" prefWidth="235.0" promptText="Select name">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </ComboBox>
+      <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Delete">
+         <VBox.margin>
+            <Insets left="82.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" text="Cancel">
+         <VBox.margin>
+            <Insets left="108.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.HelpController">
+   <children>
+      <VBox layoutX="67.0" layoutY="39.0" prefHeight="600.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="HELP   AND  SUPPORT" textAlignment="CENTER" textFill="#1de11a">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="85.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="304.0" text="View   Documentation  for  help">
+               <VBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Contact  Admin">
+               <font>
+                  <Font name="Berlin Sans FB" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="67.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <Pane prefHeight="276.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="112.0" fitWidth="153.0" layoutX="126.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@picture016.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="130.0" text="NAME      :" />
+                  <Label layoutX="14.0" layoutY="147.0" text="Assistant  :" />
+                  <Label layoutX="14.0" layoutY="164.0" text="Phone No :" />
+                  <Label layoutX="14.0" layoutY="181.0" text="e-mail       :" />
+                  <Label layoutX="14.0" layoutY="198.0" text="Office No :" />
+                  <Text layoutX="91.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="91.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="91.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="91.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="91.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </Pane>
+            <Label text="Forward your problem for quick  Help" textFill="#eb0e0e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="22.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Label>
+            <TextArea prefHeight="154.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+               </padding>
+            </TextArea>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="300.0" text="Send">
+               <padding>
+                  <Insets left="3.0" right="3.0" />
+               </padding>
+            </Button>
+            <Hyperlink text="www.schoolproj1.com/doc">
+               <VBox.margin>
+                  <Insets left="75.0" />
+               </VBox.margin>
+            </Hyperlink>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

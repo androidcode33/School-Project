@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="350.0" stylesheets="@Login1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolproject.ChooseClassSubjectController">
+   <children>
+      <VBox layoutX="107.0" layoutY="-39.0" prefHeight="200.0" prefWidth="350.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="212.0" text="CHOOSE    CLASS  AND   SUBJECT">
+               <VBox.margin>
+                  <Insets left="55.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Narrow Bold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox prefHeight="45.0" prefWidth="241.0" promptText="CLASS">
+               <VBox.margin>
+                  <Insets left="43.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox prefHeight="36.0" prefWidth="205.0" promptText="SUBJECT">
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </ComboBox>
+            <HBox prefHeight="76.0" prefWidth="350.0">
+               <children>
+                  <Button fx:id="cancel" mnemonicParsing="false" onAction="#handleCancelBtn" prefHeight="27.0" prefWidth="90.0" text="Cancel" />
+                  <Pane prefHeight="76.0" prefWidth="185.0" />
+                  <Button fx:id="confirm" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleConfirmBtn" prefHeight="27.0" prefWidth="90.0" text="Confirm" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="14.0" right="13.0" top="3.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
